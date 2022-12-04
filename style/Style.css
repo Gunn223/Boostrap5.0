@@ -19,3 +19,13 @@ a > #gambar{
     height: 80px;
     margin: 50px 40px;
 }
+form > #email , #username{
+        width:675px;
+         height:50px;
+    }
+
+@media screen and (max-width: 576px) {
+  form >  #email ,#username ,textarea {
+        width: 500px;
+    }
+}
