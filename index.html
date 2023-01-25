@@ -47,9 +47,9 @@
     <!-- Main -->
     <div class="container-fluid my-lg-5 pb-lg-5 my-md-0 pb-md-0">
       
-      <div class="row my-md-4">
+      <div class="row flex justify-content-center align-items-center">
         
-        <div class="col-lg-4 offset-lg-1 me-lg-5 text-start text-light col-md-4 offset-md-1 me-md-2">
+        <div class="col-lg-4 offset-lg-1 me-lg-5 text-start text-light col-md-4 fs-6 offset-md-1 me-md-2">
           <h1 style="font-family: 'Roboto', sans-serif;" class="fw-bold">Hello,</h1>
           <h2 style="font-family:'Roboto Flex', sans-serif;" class="fw-bold">Ia'm Febrian</h2>
           <h4 style="font-family:'Rosario', sans-serif;">UI/UX Designer || Programming </h4>
@@ -57,13 +57,13 @@
           <a href="#" class="btn btn-outline-success my-lg-3 px-lg-4 text-light">Hire me</a>
         </div>
         <div class="col-lg-4 col-md-4 ">
-        <div class="lingkaran">
-          <img src="Asset/profile.png" class="w-820 h-461" alt="...">
+        <div class="lingkaran  rounded-circle border border-dark overflow-hidden">
+          <img src="Asset/profile.png" alt="..." class="mx-auto">
         </div>
       </div>
-      <div class="col-1 offset-lg-1 col-md-1 offset-md-1 ">
-        <a href="https://www.linkedin.com/in/febrian-pamungkas-871b20258/"><img src="Asset/Icon/🦆 icon _linkedin_.png" alt="" ><br></a>
-        <a href="https://www.facebook.com/guntur.pamungkas.92372/"><img src="Asset/Icon/🦆 icon _facebook_.png" alt="" class="py-3"><br></a>
+      <div class="col-1 d-flex flex-column-reverse lh-lg offset-lg-1 col-md-1 offset-md-1 ">
+        <a href="https://www.linkedin.com/in/febrian-pamungkas-871b20258/"><img src="Asset/Icon/🦆 icon _linkedin_.png" alt="" ></a>
+        <a href="https://www.facebook.com/guntur.pamungkas.92372/"><img src="Asset/Icon/🦆 icon _facebook_.png" alt=""></a>
         <a href="https://www.instagram.com/gunnt_17/"><img src="Asset/Icon/🦆 icon _instagram_.png" alt=""></a>
       </div>
       </div>
@@ -74,7 +74,7 @@
     <div class="container-fluid px-0"  style="background-image: linear-gradient(#314251,#48364C);">
     <!-- About --> 
     <div class="container-fluid"id="about" style="background-color:rgba(225,225,225,1);">
-    <div class="container text-center text-dark py-5 " style="width:35rem;">
+    <div class="container text-center text-dark py-5">
       <h1>ABOUT</h1>
       <hr>
       <h3 class="py-5">"Rahasia untuk maju adalah memulainya"</h3>
@@ -89,30 +89,30 @@
     </div>
     <!-- end about -->
     <!-- skil -->
-    <div class="container-fluid py-3" id="skill">
-      <div class="container text-center text-light">
-        <h1>SKILL</h1>
+    <div class="container-fluid" id="skill">
+      <div class="container text-light py-5">
+        <h1 class="text-center">SKILL</h1>
         <hr>
-        <a href="https://en.wikipedia.org/wiki/HTML"><img src="Asset/Icon/🦆 icon _html5_.png" alt="" id="gambar"></a>
-       <a href="https://en.wikipedia.org/wiki/CSS"><img src="Asset/Icon/🦆 icon _css3 shiled_.png" alt id="gambar"a> 
-       <a href="https://en.wikipedia.org/wiki/Figma_(software)"><img src="Asset/Icon/🦆 icon _figma_.png" alt="" id="gambar"></a> 
-       <a href="https://en.wikipedia.org/wiki/Git"><img src="Asset/Icon/🦆 icon _git_.png" alt=""  id="gambar"></a>
+        <div>
+        <a href="https://en.wikipedia.org/wiki/HTML"><img src="Asset/Icon/Html.png" alt="" id="gambar"></a>
+       <a href="https://en.wikipedia.org/wiki/CSS"><img src="Asset/Icon/css.png" alt id="gambar"a> 
+       <a href="https://en.wikipedia.org/wiki/Figma_(software)"><img src="Asset/Icon/figma.png" alt="" id="gambar"></a> 
+       <a href="https://en.wikipedia.org/wiki/Git"><img src="Asset/Icon/Git.png" alt=""  id="gambar"></a>
        <a href="https://en.wikipedia.org/wiki/GitHub "><img src="Asset/Icon/🦆 icon _github_.png" alt="" id="gambar"></a>
-       <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="Asset/Icon/🦆 icon _bootstrap_.png" alt="" id="gambar"></a>
+       <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="Asset/Icon/Bootstrap.png" alt="" id="gambar"></a>
+      </div>
       </div>
     </div>
     <!-- end skill -->
     <!-- Contact -->
-      <div class="container-fluid px-0 text-center" id="contact">
-          <a class="btn btn-outline-success rounded-pill px-5 m-5" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            CONTACT
-          </a>
-        <div class="collapse" id="collapseExample">
-        <div class="container-fluid py-5 d-flex justify-content-center" style="background-color:rgba(225,225,225,1);">
+      <div class="container-fluid px-0 text-center" id="contact" style="background-color:rgba(225,225,225,1);">
+        <div class="container py-5" >
           <form action="#" method="post">
-            <input type="text" name="username" id="username" class=" d-block rounded-2 " placeholder="USERNAME">
-            <input type="text" name="email" id="email" class="d-block my-4 rounded-2" placeholder="EMAIL"> 
-            <textarea name="komen" id="komen" cols="89" rows="5" class="d-block rounded-2 " placeholder="KOMENTAR"></textarea>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control my-3" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="input-group">
+              <textarea class="form-control" aria-label="With textarea" placeholder="Komentar"></textarea>
+            </div>
             <a href="#" class="btn btn-success px-5 m-4"> SUBMIT</a>
           </form>
         </div>
