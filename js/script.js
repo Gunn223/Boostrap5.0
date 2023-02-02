@@ -2,7 +2,7 @@ const removeflex = document.getElementById('removeflex');
 const centerimg = document.getElementById('centerimg');
 const removemy = document.getElementById('removemy');
 const dblock = document.getElementById("d-block");
-const imgskil = document.querySelectorAll("#d-block > a > img");
+// const imgskil = document.querySelectorAll("#d-block > a > img");
 
 
 
@@ -22,7 +22,5 @@ if(layar <= 375 ){
     dblock.classList.add('text-center');
 
     // imgskil.classList.add('mt-5');
-
-}else{
-    alert('h');
+    
 }
