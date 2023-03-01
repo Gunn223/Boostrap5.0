@@ -24,3 +24,13 @@ if(layar <= 375 ){
     // imgskil.classList.add('mt-5');
     
 }
+
+// Dark mode
+const mode = document.getElementById('mode');
+const dark = document.getElementById('dark');
+const light = document.getElementById('light');
+
+mode.onclick = ubahmode
+function ubahmode(){
+
+}
