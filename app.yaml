@@ -1,4 +1,6 @@
 runtime: nodejs10
 
--url:/.*
-    script:index.html
+handlers:
+  - url: /.*
+    static_files: index.html
+    upload: index.html
