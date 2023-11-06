@@ -6,6 +6,6 @@ handlers:
   upload: index.html
 
 - url: /(.*\.(jpg|jpeg|png|gif))
-  static_files: Aset/\1
-  upload: Aset/(.*\.(jpg|jpeg|png|gif))
+  static_files: Asset/\1
+  upload: Asset/(.*\.(jpg|jpeg|png|gif))
 
