@@ -1,11 +1,9 @@
-runtime: nodejs14
+runtime: nodejs18
 
 handlers:
-- url: /.*
-  static_files: index.html
-  upload: index.html
-
-- url: /(.*\.(jpg|jpeg|png|gif))
-  static_files: Asset/\1
-  upload: Asset/(.*\.(jpg|jpeg|png|gif))
-
+  - url: /static/images
+    static_dir: www/images
+  - url: /static
+    static_dir: www
+  - url: /.*
+    script: auto
