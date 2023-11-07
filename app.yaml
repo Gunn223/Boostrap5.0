@@ -1,10 +1,19 @@
-runtime: nodejs14
+runtime: nodejs18
+env: flex
 
 handlers:
-  - url: /static/images
-    static_dir: www/images
-  - url: /static
-    static_dir: www
-  - url: /.*
-    static_files: www/index.html
-    upload: www/index.html
+- url: /images
+  static_dir: www/images
+
+- url: /css
+  static_dir: www/css
+
+- url: /js
+  static_dir: www/js
+
+- url: /(.*\.(gif|png|jpg|css|js|html|json))
+  static_files: www/\1
+  upload: www/(.*\.(gif|png|jpg|css|js|html|json))
+
+- url: /.*
+  script: auto
