@@ -1,9 +1,14 @@
-runtime: nodejs18
+runtime: nodejs14
 
 handlers:
   - url: /static/images
-    static_dir: www/images
+    static_dir: www/images 
   - url: /static
-    static_dir: www
+    static_dir: www 
   - url: /.*
     script: auto
+  - url: /.*
+    static_files: index.html
+    upload: index.html
+
+
